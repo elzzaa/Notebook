@@ -61,3 +61,11 @@ class Notebook:
         string."""
         return [note for note in self.notes if
                 note.match(filter_str)]
+
+
+if __name__ == "__main__":
+    notebook = Notebook()
+    notebook.new_note("This is my first note here.", "#1")
+    notebook.new_note("This is second note.", "#2")
+    notebook.modify_memo(1, "The first note.")
+    print(notebook.notes[0].memo)

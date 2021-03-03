@@ -15,7 +15,8 @@ class Menu:
             "5": self.quit
         }
 
-    def display_menu(self):
+    @staticmethod
+    def display_menu():
         print("""
         Notebook Menu
         1. Show all Notes
