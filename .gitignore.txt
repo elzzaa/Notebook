@@ -1,2 +1,2 @@
-_pycashe_
-env
+__pycache__
+.env
